@@ -32,7 +32,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-intl-graphql',
       options: {
-        url: 'http://localhost:1337/',
+        url: process.env.DEPLOY_URL
+          ? 'https://secure-hollows-21697.herokuapp.com'
+          : 'http://localhost:1337/',
         path: `${__dirname}/src/lang`,
         languages: ['en', 'es'],
         defaultLanguage: 'en',
