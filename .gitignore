@@ -72,3 +72,5 @@ yarn-error.log
 # Heroku
 
 package-lock.json
+# Local Netlify folder
+.netlify
